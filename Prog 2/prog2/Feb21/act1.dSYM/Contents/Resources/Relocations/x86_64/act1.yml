@@ -1,0 +1,9 @@
+---
+triple:          'x86_64-apple-darwin'
+binary-path:     '/Users/ramesesluisbarria/Library/CloudStorage/OneDrive-Personal/Documents/coding files/prog2/Feb21/act1'
+relocations:
+  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: __Z7getDatav, symObjAddr: 0x0, symBinAddr: 0x100003E70, symSize: 0x60 }
+  - { offsetInCU: 0x41, offset: 0x41, size: 0x8, addend: 0x0, symName: __Z7getDatav, symObjAddr: 0x0, symBinAddr: 0x100003E70, symSize: 0x60 }
+  - { offsetInCU: 0x89, offset: 0x89, size: 0x8, addend: 0x0, symName: __Z9printThisP4data, symObjAddr: 0x60, symBinAddr: 0x100003ED0, symSize: 0x40 }
+  - { offsetInCU: 0xBF, offset: 0xBF, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0xA0, symBinAddr: 0x100003F10, symSize: 0x29 }
+...

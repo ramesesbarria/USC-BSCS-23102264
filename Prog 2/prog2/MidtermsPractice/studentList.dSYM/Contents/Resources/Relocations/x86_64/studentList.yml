@@ -1,0 +1,21 @@
+---
+triple:          'x86_64-apple-darwin'
+binary-path:     '/Users/ramesesluisbarria/Library/CloudStorage/OneDrive-Personal/Documents/coding files/prog2/MidtermsPractice/studentList'
+relocations:
+  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x0, symBinAddr: 0x1000013D0, symSize: 0x40 }
+  - { offsetInCU: 0x104, offset: 0x104, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x0, symBinAddr: 0x1000013D0, symSize: 0x40 }
+  - { offsetInCU: 0x12C, offset: 0x12C, size: 0x8, addend: 0x0, symName: __Z8populateP13teacherRecord, symObjAddr: 0x40, symBinAddr: 0x100001410, symSize: 0x2A0 }
+  - { offsetInCU: 0x207, offset: 0x207, size: 0x8, addend: 0x0, symName: __Z7passersP13teacherRecord, symObjAddr: 0x2E0, symBinAddr: 0x1000016B0, symSize: 0x100 }
+  - { offsetInCU: 0x275, offset: 0x275, size: 0x8, addend: 0x0, symName: __Z8mainMenuP13teacherRecord, symObjAddr: 0x3E0, symBinAddr: 0x1000017B0, symSize: 0x210 }
+  - { offsetInCU: 0x2AB, offset: 0x2AB, size: 0x8, addend: 0x0, symName: __Z13addNewStudentPcS_S_iS_iS_iS_i, symObjAddr: 0x5F0, symBinAddr: 0x1000019C0, symSize: 0xD0 }
+  - { offsetInCU: 0x364, offset: 0x364, size: 0x8, addend: 0x0, symName: __Z11insertFrontP13teacherRecord, symObjAddr: 0x6C0, symBinAddr: 0x100001A90, symSize: 0x2A0 }
+  - { offsetInCU: 0x43F, offset: 0x43F, size: 0x8, addend: 0x0, symName: __Z10insertLastP13teacherRecord, symObjAddr: 0x960, symBinAddr: 0x100001D30, symSize: 0x260 }
+  - { offsetInCU: 0x509, offset: 0x509, size: 0x8, addend: 0x0, symName: __Z12insertSortedP13teacherRecord, symObjAddr: 0xBC0, symBinAddr: 0x100001F90, symSize: 0x2E0 }
+  - { offsetInCU: 0x554, offset: 0x554, size: 0x8, addend: 0x0, symName: __Z11deleteFirstP13teacherRecord, symObjAddr: 0xEA0, symBinAddr: 0x100002270, symSize: 0xA0 }
+  - { offsetInCU: 0x59B, offset: 0x59B, size: 0x8, addend: 0x0, symName: __Z10deleteLastP13teacherRecord, symObjAddr: 0xF40, symBinAddr: 0x100002310, symSize: 0x40 }
+  - { offsetInCU: 0x5C5, offset: 0x5C5, size: 0x8, addend: 0x0, symName: __Z10deleteItemP13teacherRecord, symObjAddr: 0xF80, symBinAddr: 0x100002350, symSize: 0x140 }
+  - { offsetInCU: 0x647, offset: 0x647, size: 0x8, addend: 0x0, symName: __Z11updateGradeP13teacherRecord, symObjAddr: 0x10C0, symBinAddr: 0x100002490, symSize: 0x160 }
+  - { offsetInCU: 0x6C9, offset: 0x6C9, size: 0x8, addend: 0x0, symName: __Z11findStudentP13teacherRecord, symObjAddr: 0x1220, symBinAddr: 0x1000025F0, symSize: 0x210 }
+  - { offsetInCU: 0x75E, offset: 0x75E, size: 0x8, addend: 0x0, symName: __Z16printWholeRecordP13teacherRecord, symObjAddr: 0x1430, symBinAddr: 0x100002800, symSize: 0x180 }
+  - { offsetInCU: 0x7C2, offset: 0x7C2, size: 0x8, addend: 0x0, symName: __Z17printPassedRecordP13teacherRecord, symObjAddr: 0x15B0, symBinAddr: 0x100002980, symSize: 0x84 }
+...

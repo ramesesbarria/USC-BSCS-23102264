@@ -1,0 +1,12 @@
+body {
+    padding-top: 20px;
+}
+
+#registration-page {
+    display: none;
+}
+
+.dark-mode {
+    background-color: #333;
+    color: #fff;
+}

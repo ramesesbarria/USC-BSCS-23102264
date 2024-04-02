@@ -1,0 +1,8 @@
+---
+triple:          'x86_64-apple-darwin'
+binary-path:     '/Users/ramesesluisbarria/Library/CloudStorage/OneDrive-Personal/Desktop/coding files/prog1SecondSem/prog1Midterms/gradingsystem'
+relocations:
+  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x0, symBinAddr: 0x100003E70, symSize: 0x80 }
+  - { offsetInCU: 0x41, offset: 0x41, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x0, symBinAddr: 0x100003E70, symSize: 0x80 }
+  - { offsetInCU: 0x85, offset: 0x85, size: 0x8, addend: 0x0, symName: __Z9checkTripii, symObjAddr: 0x80, symBinAddr: 0x100003EF0, symSize: 0x3D }
+...

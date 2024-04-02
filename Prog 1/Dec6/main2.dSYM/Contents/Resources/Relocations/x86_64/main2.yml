@@ -1,0 +1,10 @@
+---
+triple:          'x86_64-apple-darwin'
+binary-path:     '/Users/ramesesluisbarria/Library/CloudStorage/OneDrive-Personal/Desktop/coding files/1101n - first sem/Dec6/main2'
+relocations:
+  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: __Z16v1computerSalaryPiS_S_S_S_, symObjAddr: 0x0, symBinAddr: 0x100003B40, symSize: 0xC0 }
+  - { offsetInCU: 0x41, offset: 0x41, size: 0x8, addend: 0x0, symName: __Z16v1computerSalaryPiS_S_S_S_, symObjAddr: 0x0, symBinAddr: 0x100003B40, symSize: 0xC0 }
+  - { offsetInCU: 0xB3, offset: 0xB3, size: 0x8, addend: 0x0, symName: __Z16v2computerSalaryPiS_S_S_S_, symObjAddr: 0xC0, symBinAddr: 0x100003C00, symSize: 0xE0 }
+  - { offsetInCU: 0x121, offset: 0x121, size: 0x8, addend: 0x0, symName: __Z16v3computerSalaryPiS_S_S_S_Pf, symObjAddr: 0x1A0, symBinAddr: 0x100003CE0, symSize: 0xD0 }
+  - { offsetInCU: 0x19D, offset: 0x19D, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x270, symBinAddr: 0x100003DB0, symSize: 0x14C }
+...

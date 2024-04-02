@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Editable Table</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: auto;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #beb3b3;
+        }
+        td {
+            cursor: pointer;
+            background-color: #ffffff;
+        }
+        input {
+            border: none;
+            width: 100%;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+<table id="editableTable">
+    <thead>
+        <tr>
+            <th>ID number</th>
+            <th>First name</th>
+            <th>Last name</th>
+            <th>Course</th>
+            <th>Date Enrolled</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td contenteditable="true"></td>
+            <td contenteditable="true"></td>
+            <td contenteditable="true"></td>
+            <td contenteditable="true"></td>
+            <td contenteditable="true"></td>
+        </tr>
+        <tr>
+            <td contenteditable="true"></td>
+            <td contenteditable="true"></td>
+            <td contenteditable="true"></td>
+            <td contenteditable="true"></td>
+            <td contenteditable="true"></td>
+        </tr>
+        <tr>
+            <td contenteditable="true"></td>
+            <td contenteditable="true"></td>
+            <td contenteditable="true"></td>
+            <td contenteditable="true"></td>
+            <td contenteditable="true"></td>
+        </tr>
+        <tr>
+            <td contenteditable="true"></td>
+            <td contenteditable="true"></td>
+            <td contenteditable="true"></td>
+            <td contenteditable="true"></td>
+            <td contenteditable="true"></td>
+        </tr>
+        
+    </tbody>
+</table>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    var data = [
+    {
+        ID: 1,
+        "First name": "Rameses",
+        "Last name": "Barria",
+        "Course": "BSCS",
+        "Date enrolled": "August" 
+    },
+    {
+        ID: 2,
+        "First name": "John",
+        "Last name": "Doe",
+        "Course": "BSIT",
+        "Date enrolled": "September" 
+    },
+    {
+        ID: 2,
+        "First name": "John",
+        "Last name": "Doe",
+        "Course": "BSIT",
+        "Date enrolled": "September" 
+    },
+
+];
+
+    let rows = document.querySelectorAll('tbody tr');
+    rows.forEach((row, index) => {
+        let cells = row.querySelectorAll('td');
+        Object.keys(data[index]).forEach((key, i) => {
+            cells[i].textContent = data[index][key];
+        });
+    });
+});
+</script>
+
+</body>
+</html>
