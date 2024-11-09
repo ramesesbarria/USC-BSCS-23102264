@@ -53,6 +53,7 @@ Set *Difference(Set A, Set B){
             (*D)[i] = A[i] & (~B[i]);
         }
     }
+    return D;
 }
 
 int main() {
