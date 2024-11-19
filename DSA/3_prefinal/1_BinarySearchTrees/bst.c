@@ -57,26 +57,19 @@ bool isFoundRecursion(BST T, int x){
     return (T->data < x) ? isFoundRecursion(T->right, x) : isFoundRecursion(T->left, x);
 }
 
-void delete(BST *T, int elem){
+void delete(BST* t, int node){
     BST *trav, *tempFor2, temp;
-    for (trav = T; (*trav) != NULL && (*trav)->data != elem;
-            trav = ((*trav)->data > elem ? &(*trav)->left : &(*trav)->right)){}
-    
+    for (trav = t; (*trav) != NULL && (*trav)->data != node;
+            trav = (*trav)->data > node ? &(*trav)->left : &(*trav)->right){}
     if ((*trav) != NULL){
-        if((*trav)->left == NULL && (*trav)->right == NULL){
-            // deleting a node with no children
-            temp = *trav;
-            *trav = NULL;
-        } else if ((*trav)->left != NULL && (*trav)->right != NULL){
-            // deleting a node with 2 children
-            for(tempFor2 = &(*trav)->left; (*tempFor2)->right != NULL; tempFor2 = &(*tempFor2)->right){}
+        if((*trav)->left == NULL || (*trav)->right == NULL){ // deleting a node with one or no child
+            temp = *trav; 
+            (*trav) = ((*trav)->left != NULL) ? (*trav)->left :(*trav)->right;
+        } else { // two children
+            for(tempFor2 = &(*trav)->left; (*tempFor2)->right != NULL; tempFor2 = &(*tempFor2)->right){} 
             (*trav)->data = (*tempFor2)->data;
             temp = (*tempFor2);
             (*tempFor2) = (*tempFor2)->left;
-        } else {
-            // deleting a node with 1 children
-            temp = (*trav);
-            (*trav) = ((*trav)->left != NULL) ? (*trav)->left : (*trav)->right;
         }
         free(temp);
     }
