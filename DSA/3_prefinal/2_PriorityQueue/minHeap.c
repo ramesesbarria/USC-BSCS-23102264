@@ -85,7 +85,7 @@ void heapifySubtree(minHeap* t, int parent){
 void heapifyAll(minHeap* t){
     int lastIndex = t->lastIndex;
     int i;
-    for (i = (lastIndex-1)/2; i > 0; i--){
+    for (i = (lastIndex-1)/2; i >= 0; i--){
         heapifySubtree(t, i);
     }
 }
@@ -93,7 +93,7 @@ void heapifyAll(minHeap* t){
 void heapsortMin(minHeap* t){
     heapifyAll(t);
     int i;
-    int temp = t->lastIndex;
+    int lastNdx = t->lastIndex;
     for(i = t->lastIndex; i > 0; i--){
         int temp = t->elements[0];
         t->elements[0] = t->elements[i];
@@ -101,7 +101,7 @@ void heapsortMin(minHeap* t){
         t->lastIndex--;
         heapifySubtree(t, 0);
     }
-    t->lastIndex = temp;
+    t->lastIndex = lastNdx;
 }
 
 int main() {
