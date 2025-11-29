@@ -71,24 +71,17 @@ MinimumCostTree prims(AdjMatrix M, int start) {
             if(visited[i] == 1) {
                 for(int j = 0; j < MAX; j++) {
                     if(visited[j] == 0 && M[i][j] < minEdge.weight) {
-                        EdgeType temp = {i, j, M[i][j]};
-                        minEdge = temp;
+                        minEdge.u = i;
+                        minEdge.v = j;
+                        minEdge.weight = M[i][j];
                     }
                 }
             }
         }
-
         MST.totalWeight += minEdge.weight;
-
-        if(minEdge.weight != INF) {
-            MST.nodes[MST.nodeCount++] = minEdge;
-            visited[minEdge.v] = 1;
-        }
-        else {
-            printf("GRAPH NOT CONNECTED.\n\n");
-        }
+        MST.nodes[MST.nodeCount++] = minEdge;
+        visited[minEdge.v] = 1;
     }
-
     return MST;
 }
 

@@ -50,14 +50,10 @@ int* dijkstras(AdjMatrix M, int start){
     weightFromRoot[start] = 0;
 
     for (int i = 0; i < MAX; i++){
-        // find vertex with minimum weight
-        // for reference:
-        // v = 1 2 3 4 5
-        // s = F F F F F
 
-        int minWeight = INF, minIndex = -1;
+        int minWeight = INF, minIndex = -1; // smallest node
 
-        for (int j = 0; j < MAX; j++){
+        for (int j = 0; j < MAX; j++){ // get smallest node inside wiehgt from root
             if (visited[j] == FALSE && weightFromRoot[j] < minWeight){
                 minIndex = j;
                 minWeight = weightFromRoot[j];
@@ -68,6 +64,7 @@ int* dijkstras(AdjMatrix M, int start){
             visited[minIndex] = TRUE;
 
             for (int j = 0; j < MAX; j++){
+                // start to minindex + minindex to end(j)
                 if (minWeight + M[minIndex][j] < weightFromRoot[j]){
                     weightFromRoot[j] = minWeight + M[minIndex][j];
                 }

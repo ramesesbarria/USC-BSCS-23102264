@@ -51,7 +51,7 @@ void floyds(AdjMatrix A, AdjMatrix B) {
             }
         }   
     }
-    int i, j, k;
+    int k, i, j;
     for (k = 0; k < MAX; k++){
         for (i = 0; i < MAX; i++){
             for(j = 0; j < MAX; j++){
